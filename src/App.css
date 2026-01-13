@@ -18,6 +18,52 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+#name {
+  text-align: left;
+  position: fixed;
+  top: 0px;
+  left: 10px;
+  color: rgb(69, 14, 110);
+}
+
+#purpose {
+  text-align: left;
+  position: fixed;
+  top: 60px;
+  left: 10px;
+  color: rgb(79, 37, 112);
+  font-size:xx-large;
+}
+
+#notes {
+  text-align: left;
+  position: fixed;
+  top: 130px;
+  left: 10px;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(79, 37, 112);
+}
+
+#notion {
+  text-align: left;
+  position: fixed;
+  top: 160px;
+  left: 10px;
+  font-style: italic;
+  font-weight: bolder;
+  color:rgb(97, 48, 106);
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 1500px;
+  height: 800px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,5 +84,5 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #844141;
 }
