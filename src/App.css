@@ -65,6 +65,13 @@
   overflow: auto;
 }
 
+#loc {
+  position: fixed;
+  bottom: -5px;
+  right: 15px;
+  font-family:'Courier New', Courier, monospace;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
