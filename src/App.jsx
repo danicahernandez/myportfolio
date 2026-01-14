@@ -21,7 +21,7 @@ function App() {
       <a id = "notion" href = "https://azure-weeder-8fa.notion.site/JADE-2026-Web-Dev-0c6b99c0abf24676be1cb8e14b9e9ea2">
         Notion
       </a>
-      <img id = "background" src = "/Images/lowerfield.JPG" alt = "image"> 
+      <img id = "background" src = "/Images/lowerfield.JPG"> 
       </img>
     </div>
     </>
