@@ -26,6 +26,12 @@ function App() {
       <p id = "loc">
         The Ojai Valley
       </p>
+      <button id = "me" type = "button">
+        About Me
+      </button>
+      <button id = "work" type = "button">
+        Projects
+      </button>
     </div>
     </>
   )
