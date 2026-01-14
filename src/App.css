@@ -61,7 +61,8 @@
   top: 0;
   left: 0px;
   width: 1500px;
-  height: 800px;
+  height: 750px;
+  overflow: auto;
 }
 
 @keyframes logo-spin {
