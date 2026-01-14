@@ -20,6 +20,16 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+#background {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 1500px;
+  height: 750px;
+  overflow: auto;
+  z-index: -1;
+}
+
 #name {
   text-align: left;
   position: fixed;
@@ -58,24 +68,15 @@
   color:rgb(97, 48, 106);
 }
 
-#background {
-  position: fixed;
-  top: 0;
-  left: 0px;
-  width: 1500px;
-  height: 750px;
-  overflow: auto;
-}
-
 #loc {
   position: fixed;
   bottom: 0px;
   right: 15px;
+  font-weight: bold;
   font-family:'Courier New', Courier, monospace;
 }
 
 #me {
-  text-align: center;
   position: fixed;
   right: 150px;
   top: 10px;
@@ -88,7 +89,6 @@
 }
 
 #work {
-  text-align: center;
   position: fixed;
   right: 30px;
   top: 10px;
@@ -98,6 +98,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#Story {
+  position: fixed;
+  display: inline-block;
+  background-color:rgba(0, 0, 0, 0.064);
+  padding: 14px 25px;
+  border-radius: 8px;
+  height: 223px;
+  width: 320px;
+  top: 250px;
+  left: 282px;
+}
+
+#scroll {
+  position: relative;
 }
 
 @keyframes logo-spin {
