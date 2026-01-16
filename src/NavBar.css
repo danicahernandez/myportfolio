@@ -1,0 +1,70 @@
+/* add to top of NavBar.css for debugging */
+.nav-links a { color: rgb(115, 27, 145) !important; background: rgba(255, 255, 255, 0.423) !important; display: inline-block !important; }
+
+:root {
+  --nav-height: 56px; /* adjust as needed */
+}
+
+/* fixed top navbar */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+  background: var(--nav-bg, #00000000);
+}
+
+/* make nav site title smaller */
+.site-title {
+  font-size: 2rem; /* adjust as needed */
+  line-height: 1;  /* tighten vertical spacing */
+  margin: 0;
+}
+
+/* push page content down so it isn't hidden by the fixed navbar */
+main, .page-content, #root > div {
+  padding-top: calc(var(--nav-height) + 0.5rem);
+}
+/* container for the link buttons */
+.nav-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  /* allow wrapping so links move to a new line instead of flowing off-screen */
+  flex-wrap: wrap;
+}
+
+/* basic visible styles for the links/buttons */
+.nav-links a,
+.nav-links button {
+  /* basic reset and visible styles */
+  color: inherit;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* small-screen tweak: prefer horizontal scroll over overflowing layout */
+@media (max-width: 480px) {
+  .nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* hide scrollbar on WebKit for cleaner look (optional) */
+  .nav-links::-webkit-scrollbar { display: none; }
+}

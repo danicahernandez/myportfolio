@@ -2,17 +2,35 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './NavBar.css'
 
-//import pages
-//import Projects from "./pages/Projects"
+import HomePage from "./pages/HomePage"
+import Projects from "./pages/Projects"
+import AboutMe from "./pages/AboutMe"
+import Fun from "./pages/Fun"
+import NavBar from "./NavBar"
+
+import { HashRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return(
     <>
+    <HashRouter>
     <div>
-      <img id = "background" src = "myportfolio/src/Images/lowerfield.JPG"> 
+      <NavBar></NavBar>
+      <Routes>
+        <Route path = "/" element={<HomePage />} />
+        <Route path = "/HomePage" element={<HomePage />} />
+        <Route path = "/Projects" element={<Projects />} />
+        <Route path = "/AboutMe" element={<AboutMe />} />
+        <Route path = "/Fun" element={<Fun />} />
+      </Routes>
+
+
+      {/* <img id = "background" src = "myportfolio/src/Images/lowerfield.JPG"> 
       </img>
 
       <h1 id = "name">
@@ -47,9 +65,10 @@ function App() {
       </a>
 
       <iframe id = "scroll" src="https://storymaps.arcgis.com/stories/fcd5ad5d7bcf47e297f0bc3d6f7b4a68" width="100%" height="200" allowfullscreen>
-      </iframe>
+      </iframe> */}
 
     </div>
+    </HashRouter>
     </>
   )
 

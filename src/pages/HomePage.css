@@ -33,8 +33,9 @@
 #name {
   text-align: left;
   position: fixed;
-  top: 0px;
-  left: 10px;
+  font-size: 2rem;
+  top: 10px;
+  left: 14px;
   color: rgb(69, 14, 110);
 }
 
@@ -74,46 +75,6 @@
   right: 15px;
   font-weight: bold;
   font-family:'Courier New', Courier, monospace;
-}
-
-#me {
-  position: fixed;
-  right: 150px;
-  top: 10px;
-  color:rgb(59, 75, 164);
-  background-color: rgb(255, 255, 255);
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#work {
-  position: fixed;
-  right: 30px;
-  top: 10px;
-  color:rgb(59, 75, 164);
-  background-color: rgb(255, 254, 254);
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#Story {
-  position: fixed;
-  display: inline-block;
-  background-color:rgba(0, 0, 0, 0.064);
-  padding: 14px 25px;
-  border-radius: 8px;
-  height: 223px;
-  width: 320px;
-  top: 250px;
-  left: 560px;
-}
-
-#scroll {
-  position: relative;
 }
 
 @keyframes logo-spin {
